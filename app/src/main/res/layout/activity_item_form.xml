@@ -1,0 +1,104 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:id="@+id/layoutTask">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextView nama -->
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Task"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="4dp" />
+
+        <!-- TextView tanggal -->
+        <TextView
+            android:id="@+id/tvTaskDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <!-- TextView kategori -->
+        <TextView
+            android:id="@+id/tvTaskCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <!-- TextView deskripsi -->
+        <TextView
+            android:id="@+id/tvTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:paddingBottom="8dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- tombol hapus -->
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HAPUS"
+                android:textColor="@color/white"
+                android:layout_marginEnd="4dp" />
+
+            <!-- tombol ubah -->
+            <Button
+                android:id="@+id/btnUbah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="UBAH"
+                android:textColor="@color/white"
+                android:layout_marginEnd="4dp" />
+
+            <!-- tombol kerjakan -->
+            <Button
+                android:id="@+id/btnKerjakan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:text="KERJAKAN"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnSelesai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SELESAI"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
